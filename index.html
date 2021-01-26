@@ -4,27 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CEJV 559 Contact Us</title>
+  <link rel="stylesheet" href="css/formStyle.css">
 </head>
 
 <body>
   <h2>Contact Us</h2>
 
-  <form action="mailto:m_dongju@live.concordia.ca" method="post" enctype="text/plain">
+  <section id="form">
+    <form action="mailto:m_dongju@live.concordia.ca" method="post" enctype="text/plain">
 
-    <label>First Name</label>
-    <input type="text">
+      <label for="fname">First Name</label>
+      <input type="text" name="firstname" id="fname" required>
 
-    <label>Last Name</label>
-    <input type="text">
+      <label for="lname">Last Name</label>
+      <input type="text" name="lastname" id="lname" required>
 
-    <label for="mail">Email</label>
-    <input type="email">
+      <label for="mail">Email</label>
+      <input type="email" name="email" id="mail" required>
 
-    <label for="tarea">Message</label>
-    <textarea></textarea>
+      <label for="tarea">Message</label>
+      <textarea name="message" placeholder="Type your questions or comments here" id="tarea"></textarea>
 
-    <input type="submit">
-    <input type="reset">
-  </form>
+      <input type="submit">
+      <input type="reset">
+    </form>
+  </section>
+
 </body>
 </html>
